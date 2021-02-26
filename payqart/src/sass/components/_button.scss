@@ -1,0 +1,19 @@
+.btn-default {
+  background-color: $primary-white;
+  border: 2px solid $secondary-magenta;
+  color: $secondary-magenta;
+  padding: 0.4rem 2rem;
+  display: block;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+.btn-white {
+  background-color: transparent;
+  border: 2px solid $primary-white;
+  color: $primary-white;
+  padding: 0.2rem 1rem;
+  display: block;
+  font-weight: 700;
+  border-radius: 25px;
+}

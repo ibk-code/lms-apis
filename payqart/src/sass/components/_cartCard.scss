@@ -1,0 +1,25 @@
+.cart_card {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 20px;
+  margin-bottom: 1rem;
+  &_img {
+    background-color: $primary-white;
+    border-radius: 5px;
+    padding: 0.1rem;
+    width: fit-content;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .product_info {
+    line-height: 1.5;
+    font-weight: 300;
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}

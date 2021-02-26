@@ -1,0 +1,313 @@
+.section_wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.first_side {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  .payqart_desc {
+    background-image: linear-gradient(
+        rgba(246, 0, 94, 0.5),
+        rgba(246, 0, 94, 0.5)
+      ),
+      url('../../asset/img/black-shopping.jpg');
+    height: 100vh;
+    background-position-x: center;
+    width: 100%;
+    padding: 3rem 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo {
+    filter: brightness(0) invert(1);
+  }
+
+  .goals {
+    margin-left: 1rem;
+  }
+}
+
+.order_wrapper {
+  padding: 3rem 1rem 2rem 1rem;
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .cart_summary {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .total_cart {
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.second_side {
+  padding: 3rem 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: $primary-white;
+    }
+  }
+  .line {
+    height: 5px;
+    width: 60px;
+  }
+}
+
+.work_categories {
+  display: flex;
+  grid-column-gap: 15px;
+}
+
+.work_card {
+  display: block;
+  position: relative;
+
+  span {
+    display: inline-block;
+    font-size: 0.875rem;
+    position: absolute;
+    color: $primary-magenta;
+    padding-top: 0.5rem;
+  }
+
+  .work_img {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+    img {
+      height: 80px;
+      width: 100px;
+    }
+  }
+
+  input {
+    visibility: hidden;
+  }
+}
+
+.preapproval_form {
+  margin-top: 2rem;
+}
+
+.join_field {
+  display: flex;
+  grid-column-gap: 5px;
+  height: 45px;
+  padding-right: 0.2rem;
+  align-items: center;
+
+  input {
+    border: none;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $primary-magenta;
+    }
+
+    // &[type="date"]::-webkit-calendar-picker-indicator,
+    // input[type="date"]::-webkit-inner-spin-button{
+    //     display: none;
+    // }
+  }
+
+  .form_prepend {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+.loan_status {
+  height: 45px;
+  display: flex;
+
+  & > label {
+    width: 50%;
+
+    &:not(:first-child) {
+      border-left: 1px solid $primary-grey;
+    }
+  }
+}
+
+/* The radio-container */
+.radio-container {
+  display: block;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  margin-left: -4rem;
+  height: 20px;
+  width: 20px;
+  background-color: $primary-white;
+  border: 2px solid $secondary-magenta;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: $primary-white;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: $secondary-magenta;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.plan_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .plancard_wrap {
+    padding: 0.5rem;
+  }
+}
+
+.direction {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .back_direction {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.breakdown_wrap {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  .payment_breakdown {
+    padding: 1rem;
+    display: flex;
+
+    & > div {
+      padding: 0.8rem;
+      &:not(:first-child) {
+        border-left: 1px solid $primary-grey;
+      }
+
+      p {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .updatedown_payment {
+    background-image: linear-gradient(
+      to right top,
+      #720156,
+      #93005e,
+      #b50062,
+      #d60062,
+      #f6005e
+    ) !important;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
+
+.update_field {
+  height: 30px;
+  display: flex;
+  grid-column-gap: 5px;
+
+  .form_prepend {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid $primary-magenta;
+  }
+
+  input {
+    height: inherit;
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

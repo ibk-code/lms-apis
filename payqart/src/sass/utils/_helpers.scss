@@ -1,0 +1,59 @@
+// colors helpers
+.white {
+  color: $primary-white !important;
+}
+
+.magenta {
+  color: $primary-magenta;
+}
+
+.light-magenta {
+  color: $secondary-magenta !important;
+}
+
+//background helpers
+.bg-ash {
+  background-color: $primary-ash;
+}
+
+.bg-white {
+  background-color: $primary-white;
+}
+
+.bg-magenta {
+  background-color: $primary-magenta;
+}
+
+.bg-light-magenta {
+  background-color: $secondary-magenta;
+}
+
+.bg-grey {
+  background-color: $primary-grey;
+}
+
+//font helpers
+.md-font {
+  font-size: 1rem;
+}
+
+.lmd-font {
+  font-size: 1.2rem !important;
+}
+
+.xxs-font {
+  font-size: 0.75rem;
+}
+
+.pq-slim {
+  font-weight: 300;
+}
+
+.pq-bold {
+  font-weight: 700;
+}
+
+//spacing helpers
+.mt_3 {
+  margin-top: 3rem;
+}

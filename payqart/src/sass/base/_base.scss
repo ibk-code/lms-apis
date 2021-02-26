@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  body {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+// root configuraion for screen
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}

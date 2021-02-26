@@ -1,0 +1,38 @@
+.plancard_wrap {
+  & > label {
+  }
+  label {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-color: $primary-white;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    span {
+      display: block;
+      text-align: center;
+      color: $primary-magenta;
+      font-size: 0.75rem;
+    }
+
+    input {
+      visibility: hidden;
+    }
+  }
+
+  .active_plan {
+    background-image: linear-gradient(
+      to right top,
+      #720156,
+      #93005e,
+      #b50062,
+      #d60062,
+      #f6005e
+    ) !important;
+
+    span {
+      color: $primary-white !important;
+    }
+  }
+}

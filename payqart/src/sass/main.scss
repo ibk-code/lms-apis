@@ -1,0 +1,23 @@
+// import abstract folder
+@import './abstracts/variable';
+
+// import base folder
+@import './base/base';
+@import './base/typography';
+
+// import components folder
+@import './components/cartCard';
+@import './components/button';
+@import './components/plancard';
+
+//import Layout Folder
+@import './layout/skipToContent';
+
+// import pages folder
+@import './pages/home';
+
+// import from utils folder
+@import './utils/helpers';
+
+//import third partis librart
+@import '../../node_modules/bootstrap';
